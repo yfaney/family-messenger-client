@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watch Channel Privacy</title>
+<style>
+  body { font: 16px/1.6 -apple-system, system-ui, sans-serif; max-width: 40rem; margin: 0 auto; padding: 2rem 1rem; color: #1d1d1f; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  @media (prefers-color-scheme: dark) { body { color: #f5f5f7; background: #111; } a { color: #6cb4ff; } }
+</style>
+</head>
+<body>
+<h1>Jang Family Watch AI</h1>
+<p>This Apple Watch app shows one Discord channel chosen by a parent, and lets the person
+wearing the watch read it and send messages to it. It works on watches set up with Apple Watch
+For Your Kids (Family Setup), without an iPhone. A parent connects the watch on the
+<a href="pair/">setup page</a> using a Discord bot of their own.</p>
+<p>The app is not made by, affiliated with, or endorsed by Discord Inc.</p>
+
+<h2 id="privacy">Privacy Policy</h2>
+<p><em>Last updated: November 23, 2026</em></p>
+
+<h3>The app's maker receives no data</h3>
+<p>The app has no server of its own. Messages, account details and setup details are never
+sent to the app's maker. There is no advertising, analytics or tracking, and no data is sold.</p>
+
+<h3>What the app sends, and to whom</h3>
+<ul>
+  <li><strong>To Discord:</strong> the messages you type or dictate, which are posted to the
+      channel the parent chose, and requests to read that channel's recent messages. Everyone
+      who can see that channel can read them. Discord handles this data under its own
+      <a href="https://discord.com/privacy">Privacy Policy</a>.</li>
+  <li><strong>To Apple's iCloud (pairing only):</strong> the watch publishes a one-time public
+      key, and the setup page sends back the bot token, channel ID and display name, encrypted
+      so only that watch can read them. Both records are deleted once pairing finishes, and
+      unused ones stop working after 10 minutes. The parent signs in with their Apple Account
+      on the setup page to send them.</li>
+</ul>
+<p>Before anything is sent, the app shows a screen that explains this and asks you to agree.
+Nothing is sent until you tap <strong>Agree</strong>.</p>
+
+<h3>What is stored</h3>
+<ul>
+  <li><strong>On the watch:</strong> the bot token, channel and display name are kept in the
+      watch's Keychain, which stays on that device. Unpairing deletes them and removes the
+      app's webhook from the channel. Messages are not saved on the watch.</li>
+  <li><strong>In Discord:</strong> messages sent from the watch stay in the channel like any
+      other Discord message, until someone with permission deletes them.</li>
+</ul>
+
+<h3>What the app does not access</h3>
+<p>No location, contacts, health data, photos, or other Discord channels or servers.</p>
+
+<h3>Children</h3>
+<p>The app is meant for families: a parent sets it up with their own Discord bot and chooses the
+one channel the watch can see, and the parent controls who else is in that channel. Discord
+requires its own users to be at least 13; the person wearing the watch does not sign in to
+Discord and does not need a Discord account. Parents can unpair the watch, delete the bot, or
+delete messages in Discord at any time.</p>
+
+<h3>Deleting your data</h3>
+<p>Unpair in the app's settings to remove the stored details from the watch. Delete messages
+in Discord. Deleting the bot in the Discord Developer Portal stops all access at once.</p>
+
+<h2 id="support">Support & Contact</h2>
+<p>Questions or problems: <a href="mailto:yfaney@gmail.com">yfaney@gmail.com</a></p>
+</body>
+</html>
